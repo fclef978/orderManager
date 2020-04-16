@@ -1,0 +1,283 @@
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*  ベース
+/*--------------------------------------------------------------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*  ヘッダ
+/*--------------------------------------------------------------------------------------------------------------------*/
+header {
+    display: table;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border: gray 2px solid;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: 80px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+header h1 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 2rem;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*  メインコンテンツ
+/*--------------------------------------------------------------------------------------------------------------------*/
+section.root {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border: gray 2px solid;
+    min-height: calc(100vh - 70px - 100px + 8px);
+}
+
+article.container {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: black 1px solid;
+}
+
+article.container:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+article.container > h1 {
+    border-left: gray 1rem solid;
+    padding-left: 1rem;
+    background-color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+article.container > div {
+    margin: 1rem 1rem;
+    font-size: 1rem;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*  テーブル
+/*--------------------------------------------------------------------------------------------------------------------*/
+table {
+    margin: 1rem auto;
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th {
+    margin-bottom: -1px;
+    padding: 0.5rem 0.25rem;
+    border-bottom: gray 1px solid;
+}
+
+tr td {
+    border-right: gray 1px solid;
+}
+
+tr td:last-child {
+    border-right: none;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: white;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: whitesmoke;
+}
+
+thead td {
+    border-color: white;
+    text-align: center;
+    background-color: gray;
+    color: white;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*  リスト
+/*--------------------------------------------------------------------------------------------------------------------*/
+ul {
+    margin: 1rem auto;
+    width: 100%;
+    list-style: none;
+    font-size: 0;
+}
+
+ul > li {
+    margin-bottom: -1px;
+    padding: 0.25rem;
+    border: gray 1px solid;
+    background-color: whitesmoke;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*  横並びリスト
+/*--------------------------------------------------------------------------------------------------------------------*/
+.horizon {
+    width: 100%;
+    font-size: 0;
+}
+
+.horizon > div {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.horizon > div.s1 {
+    width: 100%;
+}
+
+.horizon > div.s2 {
+    width: 50%;
+}
+
+.horizon > div.s3 {
+    width: 33.3333%;
+}
+
+.horizon > div.s4 {
+    width: 25%;
+}
+
+.horizon > div.s5 {
+    width: 20%;
+}
+
+.horizon > div.s6 {
+    width: 16.6666667%;
+}
+
+h3 {
+    top: 0;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*  ボタン
+/*--------------------------------------------------------------------------------------------------------------------*/
+button {
+    margin: 0;
+    padding: 1rem 0.5rem;
+    border: gray 2px solid;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+button:hover {
+    background-color: white
+}
+
+button:active {
+    background-color: gray;
+    color: white;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*  フッタ
+/*--------------------------------------------------------------------------------------------------------------------*/
+footer {
+    display: table;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: gray 2px solid;
+    width: 100%;
+    height: 50px;
+}
+
+footer p {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*  メディアクエリ
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 480px) {
+    header {
+        text-align: center;
+    }
+
+    section.root {
+        max-width: 100%;
+        min-width: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    header {
+        text-align: left;
+    }
+
+    section.root {
+        width: 95%;
+        max-width: 1024px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*  フレーバーカラー
+/*--------------------------------------------------------------------------------------------------------------------*/
+.sugar {
+    border-color: #dfd8bc;
+    background-color: #fff8dc;
+}
+
+.sugar:active {
+    background-color: #dfd8bc;
+}
+
+.cocoa {
+    border-color: #4e2a35;
+    background-color: #8e6a75;
+}
+
+.cocoa:active {
+    background-color: #4e2a35;
+}
+
+.kinako {
+    border-color: #db9d48;
+    background-color: #fbbd68;
+}
+
+.kinako:active {
+    background-color: #db9d48;
+}
+
+.cinnammon {
+    border-color: #9e7f48;
+    background-color: #be8f68;
+}
+
+.cinnammon:active {
+    background-color: #9e7f48;
+}
+
+.saltAndPepper {
+    border-color: #b3b3b3;
+    background-color: #d3d3d3;
+}
+
+.saltAndPepper:active {
+    background-color: #b3b3b3;
+}
